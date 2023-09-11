@@ -12,6 +12,7 @@ public static class BoardHelper
         var counter = new int[9];
         for (int i = 0; i < 9; i++)
         {
+            //Check for row duplicate
             counter = new int[9];
             for (int j = 0; j < 9; j++)
             {
@@ -22,6 +23,7 @@ public static class BoardHelper
             if (counter.Any(x => x > 1))
                 throw new DuplicateDigitsInBlock(BlockTypeEnum.Row, i + 1, board);
 
+            //Check for column duplicate
             counter = new int[9];
             for (int j = 0; j < 9; j++)
             {
@@ -33,6 +35,7 @@ public static class BoardHelper
                 throw new DuplicateDigitsInBlock(BlockTypeEnum.Column, i + 1, board);
         }
 
+        //Check for square duplicate
         for (int i1 = 0; i1 < 3; i1++)
         {
             for (int j1 = 0; j1 < 3; j1++)

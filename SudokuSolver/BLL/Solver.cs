@@ -63,7 +63,7 @@ public class Solver: ISolver
             insertDone = false;
             var counter = new int[9];
 
-            // Insert By Column
+            // Insert By Row
             for (int i = 0; i < 9; i++)
             {
                 counter = new int[9];
@@ -93,7 +93,7 @@ public class Solver: ISolver
                 }
             }
 
-            // Insert By Row
+            // Insert By Column
             for (int j = 0; j < 9; j++)
             {
                 counter = new int[9];

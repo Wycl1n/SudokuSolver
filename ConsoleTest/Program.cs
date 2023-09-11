@@ -1,5 +1,4 @@
 ﻿using SudokuSolver.BLL;
-using SudokuSolver.Domain.Helpers;
 using SudokuSolver.Helpers.Logger;
 
 namespace ConsoleTest;
